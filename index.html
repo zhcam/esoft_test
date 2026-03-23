@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задание 1</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 100vh;
+        background-color: #a0d8f1; /* небесный фон */
+      }
+
+      .house {
+        position: relative;
+        width: 200px;
+      }
+
+      /* Основание дома */
+      .base {
+        width: 200px;
+        height: 150px;
+        background-color: #f4a261;
+        position: relative;
+        z-index: 1;
+      }
+
+      /* Крыша */
+      .roof {
+        width: 0;
+        height: 0;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        border-bottom: 80px solid #e76f51;
+        position: absolute;
+        top: -80px;
+        left: -20px;
+        z-index: 2;
+      }
+
+      /* Дымоход */
+      .chimney {
+        width: 30px;
+        height: 60px;
+        background-color: #8d99ae;
+        position: absolute;
+        top: -60px;
+        left: 140px;
+      }
+
+      /* Окно */
+      .window {
+        width: 50px;
+        height: 50px;
+        background-color: #edf2f4;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 115px;
+        border: 3px solid #2b2d42;
+      }
+
+      /* Дверь */
+      .door {
+        width: 50px;
+        height: 80px;
+        background-color: #2b2d42;
+        position: absolute;
+        bottom: 0;
+        left: 35px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="house">
+      <div class="roof"></div>
+      <div class="chimney"></div>
+      <div class="base">
+        <div class="window"></div>
+        <div class="door"></div>
+      </div>
+    </div>
+  </body>
+</html>
